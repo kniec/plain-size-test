@@ -32,15 +32,19 @@ As the files are sourced from `/dev/zero` they are super-easy to compress, thus 
 
 ```
 docker image ls|awk '/plain-size-test/'
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    10                           4d2774918544        53 seconds ago       11.3GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    9                            447d2d04d4a3        About a minute ago   10.2GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    8                            8b76081a06f0        About a minute ago   9.22GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    7                            6e6909da5cae        2 minutes ago        8.2GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    6                            3d31cf9cb00a        2 minutes ago        7.17GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    5                            567373a69d91        3 minutes ago        6.15GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    4                            385df437d6c9        3 minutes ago        5.13GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    3                            1b718b2f68fc        4 minutes ago        4.1GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    2                            417496290706        10 minutes ago       3.08GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    1                            67bbc9198bef        12 minutes ago       2.05GB
-xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    0                            3cc61bd0ce65        16 minutes ago       1.03GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    10     11.3GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    9      10.2GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    8      9.22GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    7      8.2GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    6      7.17GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    5      6.15GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    4      5.13GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    3      4.1GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    2      3.08GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    1      2.05GB
+xxxxxxx.dkr.ecr.eu-west-1.amazonaws.com/kniec/plain-size-test    0      1.03GB
 ```
+
+The real sizes are much smaller.
+
+![](./pics/tag_real_size_zero.png)
